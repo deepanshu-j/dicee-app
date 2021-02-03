@@ -1,0 +1,20 @@
+.DieContainer {
+	display: flex;
+	justify-content: space-evenly;
+	align-content: center;
+}
+
+.roll-dice-btn {
+	width: 15em;
+	padding: 1.5em;
+	border: 0px;
+	border-radius: 10px;
+	color: whitesmoke;
+	background-color: slateblue;
+	margin-top: 3em;
+}
+
+.roll-dice-btn:hover {
+	background-color: black;
+	cursor: pointer;
+}
