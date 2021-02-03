@@ -2,3 +2,30 @@
 	width: 220px;
 	height: 220px;
 }
+
+.shaking {
+	animation-name: wobble;
+	animation-duration: 0.75s;
+}
+
+@keyframes wobble {
+	from {
+		transform: translate3d(0, 0, 0);
+		/* this doesnt matter as we want intial state of the dice to be same */
+	}
+	15% {
+		transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -25deg);
+	}
+	45% {
+		transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 20deg);
+	}
+	60% {
+		transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -15deg);
+	}
+	75% {
+		transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 10deg);
+	}
+	to {
+		transform: translate3d(0, 0, 0) rotate3d(0, 0, 1, 0deg);
+	}
+}

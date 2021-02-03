@@ -22,10 +22,17 @@ class RollDice extends Component{
             }
         );
 
-    setTimeout(()=>{
-        this.setState({rolling:false});
+        //after .75 sec rolling will be made false
+        //simultaneously we want the dices to giggle
+        ///so the class holding animation show depend on this same property of state
+        ///i.e rolling
 
-    } , 750);
+        ////And important thing to remember is that if props are changed then the children are rerendered
+        ////without any explicit thing like setState
+
+        setTimeout(()=>{
+        this.setState({rolling:false});
+        } , 750);
 
     }
 
@@ -38,9 +45,9 @@ class RollDice extends Component{
 
             <h2 className="DieContainer">
               
-                <Die num={this.state.firstNum}/>
+                <Die num={this.state.firstNum} rolling={this.state.rolling}/>
               
-                <Die num={this.state.secondNum}/>
+                <Die num={this.state.secondNum} rolling={this.state.rolling}/>
 
             </h2>
             <h3>

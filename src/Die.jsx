@@ -10,12 +10,12 @@ import logo6 from './dice-six-solid.svg';
 
 function Die(props){
     let num=props.num;
+    let isRolling=props.rolling;
     let logoArr=[logo1,logo2,logo3,logo4,logo5,logo6];
     return(
         <div>
             {/* {num} */}
-            {/* <i class="fa fa-car"></i> */}
-            <img src={logoArr[num-1]} alt="Dice Logo" className="DieLogo" />
+            <img src={logoArr[num-1]} alt="Dice Logo" className={`DieLogo ${isRolling?'shaking':''}`} />
 
         </div>
     );
