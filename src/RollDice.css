@@ -42,4 +42,12 @@
 
 .roll-dice-btn:hover {
 	cursor: pointer;
+	background-color: black;
+}
+
+.credit-btn {
+	color: slateblue;
+}
+.credit-btn:hover {
+	background-color: black;
 }

@@ -1,4 +1,5 @@
 import react,{Component} from 'react';
+import Footer from './Footer';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import Dropdown from 'react-bootstrap/Dropdown';
 import Button from 'react-bootstrap/Button';
@@ -91,7 +92,7 @@ class RollDice extends Component{
             {this.state.rolling?'Rolling...':'Roll Dice!!!'}           
             </Button>
             </h3>
-
+            <Footer className="credit-btn"/>
         </div>);
     }
     
