@@ -1,20 +1,45 @@
-.DieContainer {
+/* .rollDiceContainer {
 	display: flex;
-	justify-content: space-evenly;
-	align-content: center;
+	flex-direction: column;
+	justify-content: flex-start;
+} */
+
+.first-div {
+	margin-top: 1em;
+
+	justify-content: space-around;
+	text-align: center;
+}
+.drop-down {
+	margin: 5px;
+}
+.h1tag {
+	display: inline;
+}
+@media only screen and (min-device-width: 300px) and (max-device-width: 800px) {
+	.DieContainer {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-content: center;
+	}
+}
+@media only screen and (min-device-width: 800px) {
+	.DieContainer {
+		display: flex;
+		justify-content: space-around;
+		align-content: center;
+	}
 }
 
+/* for roll dice!! button  */
 .roll-dice-btn {
-	width: 15em;
-	padding: 1.5em;
 	border: 0px;
-	border-radius: 10px;
+	margin-top: 3em;
 	color: whitesmoke;
 	background-color: slateblue;
-	margin-top: 3em;
 }
 
 .roll-dice-btn:hover {
-	background-color: black;
 	cursor: pointer;
 }

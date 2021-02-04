@@ -1,8 +1,22 @@
-.DieLogo {
-	width: 180px;
-	height: 180px;
+@media screen and (max-width: 500px) {
+	.DieLogo {
+		width: 120px;
+	}
 }
 
+@media screen and (min-width: 500px) and (max-width: 800px) {
+	.DieLogo {
+		width: 150px;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.DieLogo {
+		width: 180px;
+	}
+}
+
+/* animation for wobbling of die */
 .shaking {
 	animation-name: wobble;
 	animation-duration: 0.75s;
